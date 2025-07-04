@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  }
+  
+  body{
+    background-color: rgb(157, 83, 103);
+  }
+  
+  .titlename{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+
+  height: 60px;
+
+  font-family:fantasy;
+  font-weight: bolder;
+  font-size:xx-large;
+  background-color: rgb(170, 105, 123);
+  }
+  .moviename{
+    margin-top: 50px;
+  
+    border-radius: 10px;
+  
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  }
+  .searchinput{
+    height: 30px;
+    width: 300px;
+    border-radius: 30px;
+    font-size: larger;
+    text-align: center;
+  }
+  .butt{
+    height: 30px;
+    margin-left: 10px;
+    width: 80px;
+    border-radius: 30px;
+    font-size: larger;
+  }
+   .searchinput:hover{
+    background-color: lavender;
+   }
+   .butt:hover{
+    background-color: rgb(214, 141, 141);
+   }
+   .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align content */
+    align-items: center;
+    width: 250px;
+    padding: 15px;
+    border-radius: 20px;
+    background: rgb(168, 126, 126); /* Optional: Adds a nice contrast */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), 
+                -10px -10px 20px rgba(255, 255, 255, 0.1); /* Shadow effect */
+}
+
+.card:hover {
+    transform: scale(1.1); /* Zoom effect */
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.4), 
+                -15px -15px 30px rgba(255, 255, 255, 0.15); /* Stronger shadow on hover */
+}
+  
+  .card:hover {
+    transform: scale(1.2); /* Zoom the element to 1.2x its size */
+  }
+  .movieposter{
+    overflow: hidden; 
+    width: 400px;
+    height: 300px;
+    border-radius: 50px;
+
+
+  }
+  .movieposter img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; /* Ensures the image fits the box optimally */
+    
+  }
+  .details{
+    background-color: rgb(212, 163, 117);
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+ font-weight: bolder;
+  }
+  .containor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+  }
+  .empty{
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  
+   
+  
+  
+  
