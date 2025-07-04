@@ -33,7 +33,7 @@ searchit(inputval);
 
   return (
     <div>
-<div className='titlename'><h1>  Sanima </h1></div>
+<div className='titlename'><h1>  Cine </h1></div>
 
 <div className='moviename'>
   <input type="text" placeholder='Enter movie name' className='searchinput'/>
