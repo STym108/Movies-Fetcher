@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
 import './App.css'
-const Api_url="http://www.omdbapi.com/?i=tt3896198&apikey=7f9ea793"
+const Api_url="https://www.omdbapi.com/?i=tt3896198&apikey=7f9ea793"
 
 import './index.css'
 import Cards from './Cards';
@@ -10,13 +10,7 @@ import Cards from './Cards';
 const App = () => {
 
   var [movies,changemovies]=useState([]);
-const movie={
-  "Title": "Iron Man",
-  "Year": "2008",
-  "imdbID": "tt0371746",
-  "Type": "movie",
-  "Poster": "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg"
-}
+
   const searchit=async (title)=>{
   const response=await fetch(`${Api_url}&s=${title}`);
   const data= await response.json();
